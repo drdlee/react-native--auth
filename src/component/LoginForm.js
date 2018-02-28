@@ -9,6 +9,7 @@ class LoginForm extends Component {
     onButtonPress() {
         const { email, password } = this.state;
         this.setState({ error: '', loading: true });
+
         firebase.auth().signInWithEmailAndPassword(email, password)
         .then(this.onLoginSuccess.bind(this))
         .catch(() => {
@@ -82,7 +83,7 @@ const style = {
     errorStyle: {
         fontSize: 16,
         alignSelf: 'center',
-        color: 'red'
+        color: '#e74c3c'
     }
 };
 
