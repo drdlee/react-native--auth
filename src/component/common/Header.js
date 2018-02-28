@@ -23,7 +23,7 @@ const styles = {
     },
     textStyle: {
         fontSize: 19,
-        color: '#2d2d2d',
+        color: '#1e272e',
     }
 };
 

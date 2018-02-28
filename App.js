@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { View } from 'react-native';
 import firebase from 'firebase';
 import { Header } from './src/component/common';
+import LoginForm from './src/component/LoginForm';
 
 class App extends Component {
   componentWillMount() {
@@ -13,9 +15,13 @@ class App extends Component {
       messagingSenderId: '507444150307'
     });
   }
+
   render() {
     return (
-      <Header headerText="What app?" />
+      <View>
+        <Header headerText="What app?" />
+        <LoginForm />
+      </View>
     );
   }
 }
